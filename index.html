@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link rel="stylesheet" href="reset.css"/>
+ -->    <link rel="stylesheet" href="styles.css"/>
+    <title>Etch-A-Sketch</title>
+</head>
+<body style="background-color: pink"> 
+    <audio controls>
+        <source src="lovely.mp3"  type="audio/mpeg">
+    </audio> 
+    <h1>Bisco Bobi</h1>
+    <div class="flex-container">
+
+        <div class="content">
+            <div class="board">
+            </div>
+            <div class="buttons" style="text-align: center">
+                <button value="black" onclick="changeColor(this.value)">Black</button>
+                <button value="white" onclick="changeColor(this.value)">White</button>
+                <button value="red" onclick="changeColor(this.value)">Red</button>
+                <button value="random" onclick="changeColor(this.value)">Random</button>
+                <button type="reset"  onclick="changeSize(100)">Reset</button>
+            </div>
+            
+            <div style="text-align: center">
+                <input type="text" placeholder="Size of Board" value="100" onchange="changeSize(this.value)"/>
+                <button>Set Size</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+  <script src="main.js" defer></script>  
+</html>
